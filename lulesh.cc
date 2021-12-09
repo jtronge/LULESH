@@ -219,6 +219,10 @@ void TimeIncrement(Domain& domain)
    domain.time() += domain.deltatime() ;
 
    ++domain.cycle() ;
+
+   // Artificial slowdown
+   int num = 0;
+   for (int i = 1; i < 6000; ++i) { num = num % i + 11; }
 }
 
 /******************************************/
