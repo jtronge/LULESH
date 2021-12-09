@@ -222,7 +222,7 @@ void TimeIncrement(Domain& domain)
 
    // Artificial slowdown
    int num = 0;
-   for (int i = 1; i < 6000; ++i) { num = num % i + 11; }
+   for (int i = 1; i < 100; ++i) { num = num % i + 11; }
 }
 
 /******************************************/
